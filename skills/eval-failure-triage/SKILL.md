@@ -16,10 +16,11 @@ Use this skill when tests fail and the team needs fast, consistent root-cause an
 ## Outputs
 
 - Failure classification (`environment`, `data`, `logic`, `flaky`)
+- Failure classification (`prompt/design`, `data`, `model-behavior`, `infra`, `flaky`)
 - Reproduction command
 - Priority (`P0`, `P1`, `P2`)
 - Report in:
-  - default project path: `../problem-solving/problems/large-scale-data-processing/failure-triage-report.md`
+  - default project path: `references/ai-model-evaluation/reports/failure-triage-report-template.md`
   - local skill template: `assets/failure-report-template.md`
 
 ## Workflow
