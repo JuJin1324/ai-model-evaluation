@@ -34,7 +34,7 @@ Use this skill before implementation or before large refactors to define stable 
 ## Quick Start
 
 ```bash
-cp skills/eval-test-design/assets/test-matrix-template.md \
+cp .codex/skills/eval-test-design/assets/test-matrix-template.md \
   evaluation-resources/planning/test-matrix-<topic>.md
 ```
 

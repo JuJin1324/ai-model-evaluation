@@ -26,7 +26,7 @@ Use this skill when tests fail and the team needs fast, consistent root-cause an
 ## Workflow
 
 1. Capture failing tests and error snippets (first failure and final summary).
-2. Map symptom to a cause class using `skills/eval-failure-triage/references/classification-rules.md`.
+2. Map symptom to a cause class using `.codex/skills/eval-failure-triage/references/classification-rules.md`.
 3. Attempt reproduction:
    - Run only failing tests first.
    - If non-deterministic, rerun 3-5 times to detect flaky behavior.
@@ -40,7 +40,7 @@ Use this skill when tests fail and the team needs fast, consistent root-cause an
 ## Quick Start
 
 ```bash
-bash skills/eval-failure-triage/scripts/triage_failure.sh \
+bash .codex/skills/eval-failure-triage/scripts/triage_failure.sh \
   "npm test -- --runInBand" \
   "npm test -- tests/auth/login.spec.ts"
 ```

@@ -5,7 +5,7 @@
 ## 현재 기준 구조
 
 - 핵심 문서: `2w-brainstorm.md`, `how-diagram.md`
-- 스킬: `skills/`
+- 스킬: `.codex/skills/`
   - `eval-test-design`
   - `eval-failure-triage`
 - AI 평가 전용 레퍼런스: `evaluation-resources/`

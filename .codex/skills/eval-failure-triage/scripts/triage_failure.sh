@@ -34,6 +34,6 @@ fi
 
 echo
 echo "== Step 3: next manual actions =="
-echo "1) Classify cause using skills/eval-failure-triage/references/classification-rules.md"
-echo "2) Fill skills/eval-failure-triage/assets/failure-report-template.md"
+echo "1) Classify cause using .codex/skills/eval-failure-triage/references/classification-rules.md"
+echo "2) Fill .codex/skills/eval-failure-triage/assets/failure-report-template.md"
 echo "3) Capture reproduction command and priority"

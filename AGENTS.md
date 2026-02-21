@@ -5,7 +5,7 @@ This repository is documentation-first and organized around planning/operations 
 
 - Root docs: `README.md`, `2w-brainstorm.md`, `how-diagram.md`
 - AI evaluation references: `evaluation-resources/planning/`, `evaluation-resources/reports/`, `evaluation-resources/operations/`
-- Skills: `skills/eval-test-design/`, `skills/eval-failure-triage/`
+- Skills: `.codex/skills/eval-test-design/`, `.codex/skills/eval-failure-triage/`
 
 When adding new content, place it in the closest topic folder and keep filenames descriptive (for example, `load-test-plan.md`, `incident-retro-2026-02.md`).
 
@@ -36,10 +36,10 @@ Testing here means document quality checks:
 
 For major updates, include a short validation note in the PR description (what was checked and how).
 
-For sustainable test operations, use repository skills under `skills/`:
+For sustainable test operations, use repository skills under `.codex/skills/`:
 
-- `skills/eval-test-design/` for scenario and coverage design.
-- `skills/eval-failure-triage/` for failure classification and report output.
+- `.codex/skills/eval-test-design/` for scenario and coverage design.
+- `.codex/skills/eval-failure-triage/` for failure classification and report output.
 
 Preferred flow:
 1. Design test matrix first.
