@@ -19,13 +19,13 @@ Use this skill when tests fail and the team needs fast, consistent root-cause an
 - Reproduction command
 - Priority (`P0`, `P1`, `P2`)
 - Report in:
-  - default project path: `references/concurrency-control-poc/reports/failure-triage-report-template.md`
+  - default project path: `../problem-solving/problems/large-scale-data-processing/failure-triage-report.md`
   - local skill template: `assets/failure-report-template.md`
 
 ## Workflow
 
 1. Capture failing tests and error snippets (first failure and final summary).
-2. Map symptom to a cause class using `references/classification-rules.md`.
+2. Map symptom to a cause class using `skills/eval-failure-triage/references/classification-rules.md`.
 3. Attempt reproduction:
    - Run only failing tests first.
    - If non-deterministic, rerun 3-5 times to detect flaky behavior.

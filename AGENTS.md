@@ -4,10 +4,8 @@
 This repository is documentation-first and organized around planning/operations artifacts.
 
 - Root docs: `README.md`, `2w-brainstorm.md`, `how-diagram.md`
-- Reference material: `references/concurrency-control-poc/`
-- Operations templates: `references/concurrency-control-poc/operations/`
-- Planning docs: `references/concurrency-control-poc/planning/`
-- Report templates: `references/concurrency-control-poc/reports/`
+- Legacy reference snapshot: `references/concurrency-control-poc/`
+- Canonical working reference: `../problem-solving/problems/large-scale-data-processing/`
 
 When adding new content, place it in the closest topic folder and keep filenames descriptive (for example, `load-test-plan.md`, `incident-retro-2026-02.md`).
 
@@ -33,7 +31,7 @@ Keep templates reusable and avoid embedding environment-specific secrets or priv
 Testing here means document quality checks:
 
 - Verify internal consistency (terms, paths, and section names).
-- Ensure referenced paths exist (for example, `references/concurrency-control-poc/operations/TEMPLATE.md`).
+- Ensure referenced paths exist (for example, `../problem-solving/problems/large-scale-data-processing/how-diagram.md`).
 - Run optional lint: `markdownlint "**/*.md"`.
 
 For major updates, include a short validation note in the PR description (what was checked and how).
@@ -46,7 +44,7 @@ For sustainable test operations, use repository skills under `skills/`:
 Preferred flow:
 1. Design test matrix first.
 2. Execute and collect logs.
-3. Triage failures and publish a report in `references/concurrency-control-poc/reports/`.
+3. Triage failures and publish a report in `../problem-solving/problems/large-scale-data-processing/` (or link it from this repo).
 
 ## Commit & Pull Request Guidelines
 Current history uses concise, imperative commit messages (for example, `Initial commit`). Continue with:
