@@ -8,7 +8,7 @@
 - 스킬: `skills/`
   - `eval-test-design`
   - `eval-failure-triage`
-- AI 평가 전용 레퍼런스: `references/ai-model-evaluation/`
+- AI 평가 전용 레퍼런스: `references/`
   - `planning/` : 테스트 매트릭스 템플릿
   - `reports/` : 모델 평가/실패 triage 리포트 템플릿
   - `operations/` : 실행 플레이북
@@ -22,5 +22,5 @@
 
 ## 레거시 참고 자료
 
-`references/concurrency-control-poc/`는 과거 동시성 제어 프로젝트 아카이브입니다.  
-현재 AI 모델 평가 기준 문서로는 사용하지 않고, 문서 구성 방식 참고용으로만 취급합니다.
+동시성 제어 PoC 레퍼런스는 이 저장소에서 제거했습니다.  
+현재는 AI 모델 평가 전용 템플릿/플레이북만 유지합니다.

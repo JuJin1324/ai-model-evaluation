@@ -35,7 +35,7 @@ Use this skill before implementation or before large refactors to define stable 
 
 ```bash
 cp skills/eval-test-design/assets/test-matrix-template.md \
-  references/ai-model-evaluation/planning/test-matrix-<topic>.md
+  references/planning/test-matrix-<topic>.md
 ```
 
 ## Notes
