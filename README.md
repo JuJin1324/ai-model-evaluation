@@ -8,7 +8,7 @@
 - 스킬: `skills/`
   - `eval-test-design`
   - `eval-failure-triage`
-- AI 평가 전용 레퍼런스: `references/`
+- AI 평가 전용 레퍼런스: `evaluation-resources/`
   - `planning/` : 테스트 매트릭스 템플릿
   - `reports/` : 모델 평가/실패 triage 리포트 템플릿
   - `operations/` : 실행 플레이북

@@ -20,7 +20,7 @@ Use this skill when tests fail and the team needs fast, consistent root-cause an
 - Reproduction command
 - Priority (`P0`, `P1`, `P2`)
 - Report in:
-  - default project path: `references/reports/failure-triage-report-template.md`
+  - default project path: `evaluation-resources/reports/failure-triage-report-template.md`
   - local skill template: `assets/failure-report-template.md`
 
 ## Workflow
