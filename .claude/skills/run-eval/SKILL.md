@@ -32,7 +32,26 @@ allowed-tools: Read, Write, Bash, Glob, AskUserQuestion
 
 ---
 
-## Step 1: 평가 셋업
+## Step 1: 평가 환경 격리 및 셋업
+
+### 1-1. 브랜치 격리
+
+평가 대상 모델이 이전 평가 산출물(다른 모델이 생성한 스킬 등)을 참조하지 못하도록, `test-skill-baseline` 브랜치에서 새 브랜치를 생성한다.
+
+1. 현재 작업 디렉토리에 uncommitted 변경이 없는지 확인한다. 있으면 사용자에게 알리고 중단한다.
+2. `test-skill-baseline` 브랜치에서 새 브랜치를 생성하고 체크아웃한다:
+   - 브랜치명: `eval/{모델명을 소문자-하이픈으로 변환}` (예: `eval/codex-cli-o4-mini`)
+   - 명령어: `git checkout -b eval/{slug} test-skill-baseline`
+3. 사용자에게 브랜치 생성을 알린다:
+
+```
+🔀 평가 환경 격리 완료
+- 기준 브랜치: test-skill-baseline
+- 평가 브랜치: eval/{slug}
+- 이전 모델의 스킬 산출물이 없는 클린 상태에서 평가를 시작합니다.
+```
+
+### 1-2. 평가 셋업
 
 1. `results/` 디렉토리에서 해당 모델의 기존 결과 파일(`results/{모델명}-eval-result.md`)이 있는지 확인한다.
    - 있으면: "기존 평가 결과가 존재합니다. 이번 평가 완료 후 비교 요약을 제공하겠습니다." 안내
@@ -56,9 +75,8 @@ allowed-tools: Read, Write, Bash, Glob, AskUserQuestion
 - 채점 문서: evaluation/output/{모델명}/eval-scoring.md
 
 1. 별도 세션/터미널에서 대상 모델을 엽니다
-2. 새 프로젝트 디렉토리에 아래 파일을 배치합니다:
-   - evaluation/input/philosophy.md
-3. .claude/skills/ 기존 스킬이 없는 상태인지 확인합니다
+2. 평가 브랜치(eval/{slug})에서 대상 모델을 실행합니다
+3. .claude/skills/ 에 run-eval 외 다른 스킬이 없는 클린 상태인지 확인합니다
 ```
 
 사용자가 셋업 완료를 확인하면 Step 2로 진행한다.
@@ -85,6 +103,8 @@ allowed-tools: Read, Write, Bash, Glob, AskUserQuestion
 - 바로 만드는가, 질문을 먼저 하는가?
 - 기존 파일을 수정하는가, 새 파일만 만드는가?
 - 확인을 받고 진행하는가?
+
+**중요**: 대상 모델은 반드시 `eval/{slug}` 브랜치에서 실행해야 합니다. 이 브랜치에는 이전 모델의 스킬 산출물이 없으므로 오염 없는 평가가 가능합니다.
 
 모델 작업이 끝나면 알려주세요.
 
